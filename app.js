@@ -1,4 +1,6 @@
 import express from "express";
+import { cors } from "cors";
+
 const app = express(); //Create an express application
 const PORT = process.env.PORT || 8000; // Define the port
 
@@ -12,6 +14,7 @@ import {
 
 //Needed this for post (addResponses) to work
 app.use(express.json());
+app.use(cors());
 
 // Create a test GET request handler (/ root path)
 app.get("/", function (req, res) {
