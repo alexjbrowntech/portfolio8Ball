@@ -1,6 +1,6 @@
 import express from "express";
 const app = express(); //Create an express application
-const PORT = 8000; // Define the port
+const PORT = process.env.PORT || 8000; // Define the port
 
 import {
   addResponse,
