@@ -1,5 +1,5 @@
 import express from "express";
-import { cors } from "cors";
+import cors from "cors";
 
 const app = express(); //Create an express application
 const PORT = process.env.PORT || 8000; // Define the port
